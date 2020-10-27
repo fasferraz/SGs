@@ -7,6 +7,8 @@ It is suitable to be used with one MME (only accepts the first SCTP connection) 
 
 I built this application to use it with my eNB app (that only supports one user) and an MME (which has the SGs configured to this SGs server).
 
+<p align="center"><img src="MSS.png" width="70%"></p>
+
 In case of multiple users, the application will handle all messages initiated by the MME without any limitation.
 The only issue is the MSS SGs initiated procedures, in which there is a need to use an IMSI or TMSI. In those scenarios, the last received IMSI/TMSI will be used.
 
