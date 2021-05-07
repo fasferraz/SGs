@@ -73,7 +73,7 @@ def gsm_encode(plaintext):
     res = ""
     for c in plaintext:
         idx = gsm.find(c)
-        print(c, idx)
+        #print(c, idx)
         if idx != -1:
             res = '{0:08b}'.format(idx)[-7:] + res
             #print (res, len(res))
