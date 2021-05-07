@@ -76,7 +76,7 @@ def gsm_encode(plaintext):
         print(c, idx)
         if idx != -1:
             res = '{0:08b}'.format(idx)[-7:] + res
-            print (res, len(res))
+            #print (res, len(res))
             continue
         idx = ext.find(c)
         if idx != -1:
@@ -84,7 +84,7 @@ def gsm_encode(plaintext):
             res = '{0:08b}'.format(idx)[-7:] + res
     
     spare_bits = (8 - len(res)%8) %8
-    print(spare_bits)
+    #print(spare_bits)
     res = '0'*spare_bits + res    
     
     return splitbytes(binary2bytes(res)), spare_bits
