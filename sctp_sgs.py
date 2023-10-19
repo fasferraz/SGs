@@ -319,16 +319,16 @@ def main():
     #session_dict['vlr'] = b'\x02' + bytes([len(VLR_NAME)]) + VLR_NAME
     
     parser = OptionParser()    
-    parser.add_option("-i", "--ip", dest="mms_ip", help="MSS Local IP Address")
+    parser.add_option("-i", "--ip", dest="mss_ip", help="MSS Local IP Address")
 
     (options, args) = parser.parse_args()
     
-    if options.mms_ip is None:
+    if options.mss_ip is None:
         print('MMS IP Required. Exiting.')
         exit(1)  
         
         
-    server_address = (options.mms_ip, 29118)
+    server_address = (options.mss_ip, 29118)
 
     #socket options
     server = socket.socket(socket.AF_INET,socket.SOCK_STREAM,socket.IPPROTO_SCTP) 
