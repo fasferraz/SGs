@@ -57,7 +57,7 @@ VLR_NAME = 'mss.epc.mnc' + MNC + '.mcc' + MCC + '.3gppnetwork.org'
 #	22 SGsAP-RESET-ACK	                 - from MME to MSS: Answer to 21
 #	23 SGsAP-SERVICE-ABORT-REQUEST	     - from MSS to MME: 
 #	24 SGsAP-MO-CSFB-INDICATION	         - from MME to MSS: 
-#	26 SGsAP-MM-INFORMATION-REQUEST	     - from MMS to MME: Request <<<<<< ------------------- Can by sent by this app (sent in Location-Update procedure)
+#	26 SGsAP-MM-INFORMATION-REQUEST	     - from MSS to MME: Request <<<<<< ------------------- Can by sent by this app (sent in Location-Update procedure)
 #	27 SGsAP-RELEASE-REQUEST             - from MSS to MME
 #	29 SGsAP-STATUS	                     - from MSS to MME:
 #	31 SGsAP-UE-UNREACHABLE	             - from MME to MSS:
@@ -324,7 +324,7 @@ def main():
     (options, args) = parser.parse_args()
     
     if options.mss_ip is None:
-        print('MMS IP Required. Exiting.')
+        print('MSS IP Required. Exiting.')
         exit(1)  
         
         
