@@ -54,7 +54,7 @@ Usage: sctp_sgs.py [options]
 
 Options:
   -h, --help            show this help message and exit
-  -i MMS_IP, --ip=MMS_IP
+  -i MSS_IP, --ip=MSS_IP
                         MSS Local IP Address
 root@ubuntu# 
 ```
